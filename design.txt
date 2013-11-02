@@ -1,0 +1,25 @@
+File Browser
+
+Global Constants: None
+
+Functions:
+
+o (private) parse_link
+
+	Parse a link from an istream. Returns an option<link>.
+
+o (private) parse_word
+
+	Parse a single word from an istream. Cannot fail, always returns a word.
+
+Types:
+
+	o browser
+
+	Represents the behavior of a file browser; can parse files, and print them
+	out with a given character width.
+
+	Operations:
+
+		void add_file(string filename)
+			Parse a file, for later printing.
